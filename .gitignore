@@ -1,3 +1,4 @@
 uploads/test.js
 __pycache__
 /ask/*.log
+*.pyc
