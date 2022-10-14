@@ -1,7 +1,8 @@
 #!/bin/bash
 
 td=/home/box/python
-mkdir $td && cd $td
+mkdir $td
+cd $td
 wget https://www.python.org/ftp/python/3.10.7/Python-3.10.7.tgz
 tar xzf Python-3.10.7.tgz
 cd Python-3.10.7
