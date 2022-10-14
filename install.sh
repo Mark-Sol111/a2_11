@@ -1,5 +1,5 @@
 #!/bin/bash
 
-web/mysql_install.sh
-web/openssl_install.sh
-web/python3107_install.sh
+/home/box/web/mysql_install.sh
+/home/box/web/openssl_install.sh
+/home/box/web/python3107_install.sh
