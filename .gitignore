@@ -4,3 +4,5 @@ __pycache__
 *.pyc
 /ask.old/
 /~./
+/access-dj.log
+/error-dj.log
