@@ -17,6 +17,7 @@ sudo dpkg-preconfigure mysql-community-server_*.deb
 sudo dpkg -i mysql-{common,community-client,client,community-server,server}_*.deb
 sudo apt-get -y -f  install
 sudo apt-get -y install libmysqlclient-dev
+sudo dpkg -i mysql-{common,community-client,client,community-server,server}_*.deb
 mysql  --version
 sudo /etc/init.d/mysql restart
 sudo mysql_upgrade -u root -p
