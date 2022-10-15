@@ -1,8 +1,14 @@
 #!/bin/bash
 
-td=/home/box/python
-mkdir $td
-cd $td
+source ~/.bashrc
+
+DIR="/home/box/python"
+if [ -d "$DIR" ]; then
+    sudo rm -Rf $DIR
+fi
+
+mkdir $DIR
+cd $DIR
 wget https://www.python.org/ftp/python/3.10.7/Python-3.10.7.tgz
 tar xzf Python-3.10.7.tgz
 cd Python-3.10.7
