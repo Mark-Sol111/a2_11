@@ -19,10 +19,11 @@ make
 make install
 sudo locale-gen "en_US.UTF-8"
 sudo dpkg-reconfigure locales
-export PATH=/home/box/openssl/bin:$PATH
+echo "export PATH=/home/box/openssl/bin:$PATH
 export LD_LIBRARY_PATH=/home/box/openssl/lib
 export LC_ALL='en_US.UTF-8'
-export LDFLAGS='-L /home/box/openssl/lib -Wl,-rpath,/home/box/openssl/lib
-which openssl
+export LDFLAGS='-L /home/box/openssl/lib -Wl,-rpath,/home/box/openssl/lib'
+" >> ~/.bash_profile
 source ~/.bash_profile
+which openssl
 cd $cur
