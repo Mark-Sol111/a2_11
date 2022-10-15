@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y update
+sudo apt-get -y upgrade
 cur=`pwd`
 mkdir ~/mysql && cd ~/mysql
 wget https://downloads.mysql.com/archives/get/p/23/file/mysql-server_5.7.9-1ubuntu14.04_amd64.deb-bundle.tar
