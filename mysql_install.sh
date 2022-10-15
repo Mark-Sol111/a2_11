@@ -1,14 +1,13 @@
 #!/bin/bash
 
-apt-get update
+sudo apt-get update
+sudo apt-get upgrade
 cur=`pwd`
 mkdir ~/mysql && cd ~/mysql
 wget https://downloads.mysql.com/archives/get/p/23/file/mysql-server_5.7.9-1ubuntu14.04_amd64.deb-bundle.tar
 tar -xvf mysql-server_5.7.9-1ubuntu14.04_amd64.deb-bundle.tar
 sudo apt-get -y remove mysql-server
 sudo apt-get -y autoremove
-sudo apt-get -y instsall apparmor libaio1 libmecab2 libnuma1
-
 sudo dpkg-preconfigure mysql-community-server_*.deb
 sudo dpkg -i mysql-{common,community-client,client,community-server,server}_*.deb
 sudo apt-get -y -f  install
